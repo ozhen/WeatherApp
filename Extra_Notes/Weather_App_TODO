@@ -1,0 +1,11 @@
+Implementation:
+	-The selected city will remain the same even though the user switches
+	 between "today" and "week" in action bar
+	-Refreash action in the action bar
+	-
+	
+Ideas:
+	+meal recommendations depending on temperature
+	+"lucky food" of the day
+	+food challenges
+		-based on the weather, eat the suggested food and user can receive a reward?

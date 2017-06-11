@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:padding="20dp">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <!--Testing_Tools
+    <TableRow>
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+            android:layout_above="@+id/weather_icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="45dp" />
+        <EditText
+            android:id="@+id/edTxtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnShow"
+            android:layout_alignStart="@+id/updated_field"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:hint="Tokyo" />
+        <EditText
+            android:id="@+id/edTxtCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edTxtCity"
+            android:layout_toEndOf="@+id/weather_icon"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:hint="jp"/>
+    </TableRow>
+-->
+    <!--City-->
+    <TableRow>
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </TableRow>
+
+    <!--Time-->
+    <TableRow>
+        <TextView
+            android:id="@+id/time_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+
+    </TableRow>
+
+    <!--Icon-->
+    <TableRow>
+        <TextView
+            android:id="@+id/weather_icon_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="45sp"
+            />
+
+    </TableRow>
+
+    <!--Temp&Desrciption-->
+    <TableRow>
+        <TextView
+            android:id="@+id/temp_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/details_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+    </TableRow>
+
+    <!--Extra_Info-->
+    <TableRow>
+        <TextView
+            android:id="@+id/humidity_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_field"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/pressure_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidity_field"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </TableRow>
+
+
+
+    <!--Tomorrow-->
+    <TableRow>
+        <TextView
+            android:id="@+id/date_tmr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             />
+    </TableRow>
+
+    <!--Tomorrow_icon-->
+    <TableRow>
+        <TextView
+            android:id="@+id/weather_icon_tmr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:id="@+id/tmr_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+    </TableRow>
+
+    <!--Tomorrow_temp-->
+   <TableRow>
+       <TextView
+       android:id="@+id/temp_tmr_max"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:textColor="#FFFFFF"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:textSize="25sp" />
+       <TextView
+           android:id="@+id/temp_tmr_min"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:textColor="#FFFFFF"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textSize="25sp" />
+   </TableRow>
+
+
+
+
+</TableLayout>

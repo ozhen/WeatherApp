@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3F51B5"
+    android:padding="20dp">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <!--City-->
+    <TableRow>
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </TableRow>
+
+    <!--Time-->
+    <TableRow>
+        <TextView
+            android:id="@+id/time_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+
+    </TableRow>
+
+    <!--Icon-->
+    <TableRow>
+        <TextView
+            android:id="@+id/weather_icon_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="45sp"
+            />
+
+    </TableRow>
+
+    <!--Temp&Desrciption-->
+    <TableRow>
+        <TextView
+            android:id="@+id/temp_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/details_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+    </TableRow>
+
+    <!--Extra_Info-->
+    <TableRow>
+        <TextView
+            android:id="@+id/humidity_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_field"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/pressure_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidity_field"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </TableRow>
+
+
+    <!---Button
+    <TableRow>
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+            android:layout_above="@+id/weather_icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="45dp" />
+
+        <EditText
+            android:id="@+id/edTxtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnShow"
+            android:layout_alignStart="@+id/updated_field"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edTxtCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edTxtCity"
+            android:layout_toEndOf="@+id/weather_icon"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+
+    </TableRow>
+-->
+    <!--Day_2-->
+    <TableRow>
+        <TextView
+            android:id="@+id/day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp"
+            android:layout_column="0"/>
+        <TextView
+            android:id="@+id/temp_max_day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:layout_column="1"/>
+        <TextView
+            android:id="@+id/temp_min_day_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:layout_column="2"/>
+    </TableRow>
+
+    <!--Day_3-->
+    <TableRow>
+        <TextView
+            android:id="@+id/day_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/temp_max_day_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/temp_min_day_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <!--Day_4-->
+    <TableRow>
+        <TextView
+            android:id="@+id/day_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/temp_max_day_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/temp_min_day_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </TableRow>
+    <!--Day_5-->
+    <TableRow>
+        <TextView
+            android:id="@+id/day_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/temp_max_day_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/temp_min_day_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </TableRow>
+    <!--Day_6-->
+    <TableRow>
+        <TextView
+            android:id="@+id/day_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/temp_max_day_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/temp_min_day_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </TableRow>
+    <!--Day_7-->
+    <TableRow>
+        <TextView
+            android:id="@+id/day_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/temp_max_day_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/temp_min_day_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </TableRow>
+
+</TableLayout>

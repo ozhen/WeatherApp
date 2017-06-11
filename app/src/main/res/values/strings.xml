@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OZ_Weather</string>
+
+    <string name="lunch_pasta">Pasta></string>
+    <string name="lunch_ramen">Ramen></string>
+    <string name="lunch_sandwith">Sandwith></string>
+
+    <string name="dinner_tendon">Tendon></string>
+    <string name="dinner_sushi">Sushi></string>
+
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+</resources>
