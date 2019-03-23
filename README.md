@@ -1,6 +1,9 @@
 # WeatherApp
-This is a sample weather app created for self-learning Android app developement.
-It displays daily and weekly weather based on the selected city.
+This is a weather prediction app that I created for learning purpose.
+
+#Features
+1. User selects the city to view the corresponding Weather report.
+2. Daily and weekly reports are available.
 
 
 ## Tools used in this app:
